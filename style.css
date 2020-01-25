@@ -1,0 +1,9 @@
+header {
+    text-align: center;
+}
+
+.btn {
+    background-color: blue;
+    border-style: solid;
+    border-color: crimson;
+}
