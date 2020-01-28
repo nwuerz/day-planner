@@ -7,3 +7,15 @@ header {
     border-style: solid;
     border-color: crimson;
 }
+
+.past {
+    background-color: crimson;
+}
+
+.present {
+    background-color: cyan;
+}
+
+.future {
+    background-color: greenyellow;
+}
