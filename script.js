@@ -1,8 +1,6 @@
-// ============================= initialize variables ============================\\
 var currentHour = moment().hours();
 var $saveBtn = $(".saveBtn");
 var userText = $(".userText").val();
-
 
 Array.from($('div[id^="hour-"]')).forEach(function(el) {
 
@@ -13,12 +11,6 @@ Array.from($('div[id^="hour-"]')).forEach(function(el) {
     }
 
 });
-
-
-
-
-
-// ============================== event handlers =================================\\
 
 // add current day to #current day <p> element in header //
 
@@ -31,6 +23,8 @@ $saveBtn.on("click", function() {
     var key = $(this).siblings('.hour')[0].textContent.trim();
      localStorage.setItem(key, inputVal);
 });
+
+// add past, present and future class attribute to the corresponding time segment, based on the current time of day //
 
 Array.from($('div[id^="hour-"]')).forEach(function(el) {
 
@@ -47,31 +41,3 @@ Array.from($('div[id^="hour-"]')).forEach(function(el) {
     if(currentHour > currentTime)
         result = $(el).find('.userText').addClass("future");
 });
-
-// differentiate current hour from past and future hours via time segment color //
-
-// var currentTime = moment().format('h:mm:ss a');
-// console.log(currentTime);
-
-// //if/else statements
-
-// function applyColor() {
-//     if (currentTime===??) {
-//         $(".userText").attr("id", "present");
-//     }
-
-// }
-
-//switch statement
-
-// switch(currentTime) {
-//     case '??':
-//         result = $(".userText").attr("id", "past");
-//         break;
-//     case '??':
-//         result = $(".userText").attr("id", "present");
-//         break;
-//     case '??':
-//         result = $(".userText").attr("id", "future");
-//         break;
-// // }
