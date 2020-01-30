@@ -24,9 +24,9 @@ Array.from($('div[id^="hour-"]')).forEach(function(el) {
 
 $("#currentDay").text(moment().format('MMMM Do YYYY'));
 
-// user local storage to set and retrieve the input value when the save button is pressed //
+// use local storage to set and retrieve the input value of THIS segment when the save button is pressed //
 
-$saveBtn.on("click", function(event) {
+$saveBtn.on("click", function() {
     var inputVal = $(this).siblings('.userText')[0].value;
     var key = $(this).siblings('.hour')[0].textContent.trim();
      localStorage.setItem(key, inputVal);

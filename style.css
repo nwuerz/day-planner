@@ -1,5 +1,6 @@
 body {
     background-image: url("./images/vintage-wallpaper.png");
+    font-family: 'Cabin', sans-serif;
 }
 
 header {
@@ -16,6 +17,8 @@ header {
     border-style: solid;
     border-width: 1px;
     background-color: rgb(238, 238, 238);
+    text-align: center;
+    display: inline-block;
 }
 
 .btn {
@@ -29,7 +32,7 @@ header {
 }
 
 .past {
-    background-color: rgb(161, 1, 33);
+    background-color: rgb(104, 104, 104);
 }
 
 .present {
