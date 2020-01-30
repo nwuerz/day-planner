@@ -2,10 +2,16 @@ header {
     text-align: center;
 }
 
+.hour {
+    border-top: black;
+    border-bottom: black;
+    border-style: solid;
+}
+
 .btn {
-    background-color: blue;
     border-style: solid;
     border-color: crimson;
+    background-image: url("/images/save-button.png");
 }
 
 .past {
