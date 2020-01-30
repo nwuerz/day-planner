@@ -1,27 +1,41 @@
+body {
+    background-image: url("./images/vintage-wallpaper.png");
+}
+
 header {
     text-align: center;
+}
+
+.jumbotron {
+    padding: 5px;
 }
 
 .hour {
     border-top: black;
     border-bottom: black;
     border-style: solid;
+    border-width: 1px;
+    background-color: rgb(238, 238, 238);
 }
 
 .btn {
     border-style: solid;
-    border-color: crimson;
-    background-image: url("/images/save-button.png");
+    background-color: rgb(238, 238, 238);
+    border-color: black;
+    background-image: url("./images/save-button.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
 }
 
 .past {
-    background-color: crimson;
+    background-color: rgb(161, 1, 33);
 }
 
 .present {
-    background-color: cyan;
+    background-color: rgb(150, 248, 248);
 }
 
 .future {
-    background-color: greenyellow;
+    background-color: rgb(216, 247, 169);
 }
